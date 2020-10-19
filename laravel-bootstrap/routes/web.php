@@ -14,11 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('game');
+    return view('welcome');
 });
-
-Route::get('/getMechanics', 'App\Http\Controllers\GameController@getMechanics');
-
-Route::get('/getPositions', 'App\Http\Controllers\GameController@getPositions');
-
-Route::get('/startGame', 'App\Http\Controllers\GameController@startGame');
